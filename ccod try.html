@@ -1,0 +1,268 @@
+<style>
+
+body{
+    font-family: "Tahoma", Arial, sans-serif;
+    background:#fefae0;
+    color:#000;
+    margin:0;
+    padding:0;
+    line-height:1.6;
+}
+
+/* الهيدر */
+header{
+    background:#ffffff;
+    padding:12px 25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid #ddd;
+}
+
+.logo{
+    font-weight:bold;
+    font-size:22px;
+    color:#000;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    margin:0;
+    padding:0;
+}
+
+nav ul li{
+    margin-left:18px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#000;
+    font-weight:600;
+}
+
+nav ul li a:hover{
+    color:#d4a373;
+}
+
+/* الواجهة الرئيسية */
+.hero{
+    text-align:center;
+    padding:60px 20px;
+    background:url('https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+}
+
+/* الكتابة فوق الصورة */
+.hero h1{
+    font-size:40px;
+    color:#000;
+    text-shadow:0 0 3px #fff, 0 0 6px #fff;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:18px;
+    max-width:600px;
+    margin:auto;
+    color:#000;
+    text-shadow:0 0 3px #fff;
+}
+
+/* العناوين */
+h2{
+    text-align:center;
+    color:#000;
+    margin-bottom:30px;
+    font-size:28px;
+}
+
+/* الكروت */
+.grid{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+}
+
+.card{
+    background:#fff;
+    padding:20px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    width:250px;
+    text-align:center;
+}
+
+/* الباقات */
+.packages{
+    background:#faedcd;
+    padding:30px;
+}
+
+.package{
+    background:#fff;
+    padding:20px;
+    border:1px solid #d4a373;
+    margin:10px;
+    border-radius:10px;
+    text-align:center;
+}
+
+.package.featured{
+    border:2px solid #d4a373;
+}
+
+/* التواصل */
+.contact{
+    max-width:500px;
+    margin:auto;
+    background:#fff;
+    padding:20px;
+    border-radius:10px;
+}
+
+.contact input,
+.contact textarea,
+.contact select,
+.contact button{
+    width:100%;
+    padding:10px;
+    margin-bottom:10px;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+
+.contact button{
+    background:#d4a373;
+    color:#fff;
+    border:none;
+    cursor:pointer;
+}
+
+.contact button:hover{
+    background:#c08c5c;
+}
+
+/* الفوتر */
+footer{
+    text-align:center;
+    background:#333;
+    color:#fff;
+    padding:20px;
+    font-size:14px;
+}
+
+/* الموبايل */
+@media(max-width:600px){
+    .grid,
+    .packages{
+        flex-direction:column;
+        align-items:center;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">🐾 لوفينغ هومز</div>
+    <nav>
+        <ul>
+            <li><a href="#about">عن الشركة</a></li>
+            <li><a href="#facilities">مرافقنا</a></li>
+            <li><a href="#packages">الحزم</a></li>
+            <li><a href="#contact">اتصل بنا</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>عالم الكلاب</h1>
+    <p>نضمن لكلبك اقامة ممتعة وامنة تماما كانه في منزله وبينما تكون بعيدا يحصل كلبك على رعاية فائقة المرح</p>اً.</p>
+</section>
+
+<section id="about">
+    <h2>لماذاعليك ان تختار لوفينغ هومز؟</h2>
+    <p style="text-align:center;">نحن شركة متخصصة في رعاية الكلاب، نجمع بين الخبرة البيطرية والرفاهية العالية. هدفنا هو ضمان راحة بالك وراحة كلبك من خلال مرافقنا المتطورة وفريقنا المتفاني.</p>
+</section>
+
+<section id="facilities">
+    <h2>مرافقنا</h2>
+    <div class="grid">
+        <div class="card"><h3> صالة الحلاقة</h3><p>صالون العناية والرفاهية.</p></div>
+        <div class="card"><h3> غرف ذكية</h3><p>تدفئة وتبريد وشاشات ترفيه.</p></div>
+        <div class="card"><h3> خدمة التوصيل</h3><p>توصيل آمن من وإلى المنزل.</p></div>
+        <div class="card"><h3> مناطق خضراء مفتوحة</h3><p>ساحات ترفيهية واسعة.</p></div>
+        <div class="card"><h3> رعاية بيطرية</h3><p>رعاية طبية على مدار 24 ساعة.</p></div>
+    </div>
+</section>
+
+<section id="packages" class="packages">
+    <h2>حزم الإقامة</h2>
+    <div class="grid">
+        <div class="package featured">
+            <h3>الحزمة المميزة</h3>
+            <ul>
+                <li>4 مشيات/أنشطة يومياً</li>
+                <li>مساحة عشب خاصة</li>
+                <li>تحديثات يومية</li>
+                <li>مكافآت خاصة</li>
+            </ul>
+            <button>اختيار المميز</button>
+        </div>
+        <div class="package">
+            <h3>الحزمة الكلاسيكية</h3>
+            <ul>
+                <li>3 مشيات/أنشطة يومياً</li>
+                <li>حظيرة اللعب الداخلية</li>
+                <li>منطقة استرخاء</li>
+                <li>جلسة حلاقة مجانية</li>
+            </ul>
+            <button>اختيار الكلاسيكية</button>
+        </div>
+        <div class="package">
+            <h3>حزمة اليوم</h3>
+            <ul>
+                <li>مشيتان يومياً</li>
+                <li>منطقة لعب خارجية</li>
+                <li>مسار الرشاقة</li>                
+                <li>نشاط الحفر في الرمال</li>
+            </ul>
+            <button>اختيار اليوم</button>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>تواصل معنا</h2>
+<img src="1.jpeg" alt="good "height="400" width="400" >
+<img src="2.jpeg" alt="good" height="400" width="400" style="float: right;"> 
+    <div class="contact">       
+        <form>
+            <label>اسمك الكريم</label>
+            <input type="text" placeholder="أدخل اسمك" required>
+            <label>البريد الإلكتروني</label>
+            <input type="email" placeholder="example@mail.com" required>
+            <label>الحزمة المهتم بها</label>
+            <select>
+                <option>المميزة</option>
+                <option>الكلاسيكية</option>
+                <option>اليوم</option>
+                <option>طلب مخصص</option>
+            </select>
+            <label>رسالتك</label>
+            <textarea rows="5" placeholder="اكتب استفسارك هنا..."></textarea>
+            <button type="submit">إرسال الطلب</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 لوفينغ هومز - جميع الحقوق محفوظة</p>
+    <p>تم تصميم الموقع بواسطة اوس العمري.</p>
+</footer>
+
+</body>
+</html>
